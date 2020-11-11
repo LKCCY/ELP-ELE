@@ -1,5 +1,5 @@
 {
-  "name": "@vueblocks/elp-card",
+  "name": "elp-card",
   "version": "1.0.1",
   "main": "./dist/index.umd.js",
   "license": "MIT",

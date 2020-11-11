@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run --scope @vueblocks/* build"
+    "build": "lerna run --scope elp-* build"
   },
   "license": "MIT",
   "devDependencies": {
