@@ -24,7 +24,9 @@ export default {
   props: {
     title: String,
     subTitle: String,
-    tooltip: String
+    tooltip: {
+      type: String
+    }
   }
 }
 </script>
