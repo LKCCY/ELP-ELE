@@ -279,6 +279,10 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "createStyledAttrsMixin", function() { return /* reexport */ createStyledAttrsMixin; });
+__webpack_require__.d(__webpack_exports__, "composeSystem", function() { return /* reexport */ composeSystem; });
+__webpack_require__.d(__webpack_exports__, "createClass", function() { return /* reexport */ createClass; });
+__webpack_require__.d(__webpack_exports__, "hasClass", function() { return /* reexport */ hasClass; });
+__webpack_require__.d(__webpack_exports__, "addClass", function() { return /* reexport */ addClass; });
 
 // CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -2375,10 +2379,14 @@ var index_esm_style = function style(_ref) {
 
 // CONCATENATED MODULE: ./src/extract-theme.js
 
+
 const systemFunc = index_esm_compose(space, layout, color, background, border, borderRadius, grid, position, shadow, typography, flexbox);
 const composeSystem = (props = {}, theme = {}) => systemFunc({ ...props,
   theme
 });
+const createClass = (props = {}, theme = {}) => {
+  return emotion_css_esm_css(composeSystem(props, theme));
+};
 // CONCATENATED MODULE: ./src/component-mixin.js
 
 
@@ -2388,37 +2396,6 @@ const createStyledAttrsMixin = name => ({
   computed: {
     theme() {
       return this.$eleUiTheme || {};
-    },
-
-    /** Split style attributes and native attributes */
-    splitProps() {
-      const _attrs = this.$attrs;
-      const styles = Object.assign({}, this.componentStyles || {}, _attrs);
-      return {
-        styleAttrs: styles
-      }; // const { styleAttrs, nativeAttrs } = extractAttrs(styles)
-      // return {
-      //   styleAttrs,
-      //   nativeAttrs
-      // }
-    },
-
-    className() {
-      const {
-        styleAttrs
-      } = this.splitProps; // TODO: 生成css
-
-      const boxStylesObject = composeSystem(styleAttrs, this.theme);
-      return emotion_css_esm_css(boxStylesObject);
-    },
-
-    /** Computed attributes object */
-    computedAttrs() {
-      return { ...(name && {
-          'elp-component-name': name
-        }),
-        ...this.splitProps.nativeAttrs
-      };
     }
 
   },
@@ -2429,7 +2406,23 @@ const createStyledAttrsMixin = name => ({
 
   }
 });
+// CONCATENATED MODULE: ./src/classes.js
+const hasClass = (el, className) => {
+  let reg = new RegExp('(^|\\s)' + className + '(\\s|$)');
+  return reg.test(el.className);
+};
+const addClass = (el, className) => {
+  if (hasClass(el, className)) {
+    return;
+  }
+
+  let newClass = el.className.split(' ');
+  newClass.push(className);
+  el.className = newClass.join(' ');
+};
 // CONCATENATED MODULE: ./index.js
+
+
 
 // CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 

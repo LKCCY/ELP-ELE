@@ -9,5 +9,9 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.8",
     "@vue/cli-service": "^4.5.8"
+  },
+  "dependencies": {
+    "lodash.isempty": "^4.4.0",
+    "lodash.merge": "^4.6.2"
   }
 }

@@ -8,32 +8,6 @@ export const createStyledAttrsMixin = (name) => ({
   computed: {
     theme () {
       return this.$eleUiTheme || {}
-    },
-    /** Split style attributes and native attributes */
-    splitProps () {
-      const _attrs = this.$attrs
-      const styles = Object.assign({}, this.componentStyles || {}, _attrs)
-      return { styleAttrs: styles }
-      // const { styleAttrs, nativeAttrs } = extractAttrs(styles)
-
-      // return {
-      //   styleAttrs,
-      //   nativeAttrs
-      // }
-
-    },
-    className () {
-      const { styleAttrs } = this.splitProps
-      // TODO: 生成css
-      const boxStylesObject = composeSystem(styleAttrs, this.theme)
-      return css(boxStylesObject)
-    },
-    /** Computed attributes object */
-    computedAttrs () {
-      return {
-        ...name && { 'elp-component-name': name },
-        ...this.splitProps.nativeAttrs
-      }
     }
   },
   methods: {

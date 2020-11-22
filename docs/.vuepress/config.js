@@ -16,6 +16,12 @@ module.exports = {
           children: ['']
         },
         {
+          title: '数据展示',
+          children: [
+            'data-display/elp-dongdong'
+          ]
+        },
+        {
           title: '布局',
           children: [
             'layout/elp-card'

@@ -1,6 +1,6 @@
 import ElpDongdong from './src/elp-dongdong'
 
-ElpCard.install = function (Vue) {
+ElpDongdong.install = function (Vue) {
   Vue.component(ElpDongdong.name, ElpDongdong)
 }
 

@@ -6,7 +6,6 @@ const colors = {
   colorBorder: '#E3E6E8',
   black: '#000',
   white: '#fff',
-  primary: '#1a72ff',
   tertiary: '#fe9e4d',
   success: '#4BCB21',
   warning: '#FFC82C',

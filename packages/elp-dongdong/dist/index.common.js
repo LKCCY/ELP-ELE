@@ -118,12 +118,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"df5248bc-vue-loader-template"}!D:/临时用测试/elp-ele/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-dongdong.vue?vue&type=template&id=4de6da7b&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.erp)?_c('a',{attrs:{"href":("timline://chat/?topin=" + _vm.erp)}},[_c('img',{staticClass:"elp-dongdong",attrs:{"src":_vm.imgSrc}})]):_vm._e()}
+// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"df5248bc-vue-loader-template"}!D:/临时用测试/elp-ele/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-dongdong.vue?vue&type=template&id=66fa0ca6&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.erp)?_c('a',{directives:[{name:"elp",rawName:"v-elp:dongdong",arg:"dongdong"}],attrs:{"href":("timline://chat/?topin=" + _vm.erp)}},[_c('img',{directives:[{name:"elp",rawName:"v-elp:dongdong-img",value:(_vm.imgStyle),expression:"imgStyle",arg:"dongdong-img"}],attrs:{"src":_vm.imgSrc}})]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/elp-dongdong.vue?vue&type=template&id=4de6da7b&
+// CONCATENATED MODULE: ./src/elp-dongdong.vue?vue&type=template&id=66fa0ca6&
 
 // CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--12-0!D:/临时用测试/elp-ele/node_modules/thread-loader/dist/cjs.js!D:/临时用测试/elp-ele/node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-dongdong.vue?vue&type=script&lang=js&
 //
@@ -145,8 +145,19 @@ var staticRenderFns = []
     return {
       imgSrc: 'data:image/png;base64,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'
     };
-  }
+  },
 
+  computed: {
+    imgStyle() {
+      return {
+        m: '0 5px',
+        width: '20px',
+        borderRadius: '50%',
+        verticalAlign: 'sub'
+      };
+    }
+
+  }
 });
 // CONCATENATED MODULE: ./src/elp-dongdong.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_elp_dongdongvue_type_script_lang_js_ = (elp_dongdongvue_type_script_lang_js_); 
@@ -273,7 +284,7 @@ var component = normalizeComponent(
 // CONCATENATED MODULE: ./index.js
 
 
-ElpCard.install = function (Vue) {
+elp_dongdong.install = function (Vue) {
   Vue.component(elp_dongdong.name, elp_dongdong);
 };
 

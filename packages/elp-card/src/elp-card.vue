@@ -1,18 +1,18 @@
 <template>
-  <div component="elp-card" :class="createClass(cardProps)">
-    <header v-if="title" :class="createClass(headProps)">
+  <div v-elp:card="cardStyle">
+    <header v-if="title" v-elp:card-head="headStyle">
       <div>
         <el-tooltip :content="tooltip">
           <i class="el-icon-warning" v-if="tooltip"></i>
         </el-tooltip>
-        <span :class="createClass(headTitleProps)">{{title}}</span>
-        <span class="createClass(headSubProps)">{{subTitle}}</span>
+        <span v-elp:card-title="headTitleStyle">{{title}}</span>
+        <span v-elp:card-subtitle="headSubStyle">{{subTitle}}</span>
       </div>
       <div>
         <slot name="operate"></slot>
       </div>
     </header>
-    <main :class="createClass(mainProps)">
+    <main v-elp:card-main="mainStyle">
       <slot></slot>
     </main>
   </div>
@@ -33,10 +33,10 @@ export default {
     }
   },
   computed: {
-    cardProps () {
+    cardStyle () {
       return { bg: '#fff' }
     },
-    headProps () {
+    headStyle () {
       return {
         p: '16px 20px',
         display: 'flex',
@@ -45,21 +45,21 @@ export default {
         borderColor: 'colorBorder'
       }
     },
-    headTitleProps () {
+    headTitleStyle () {
       return {
         fontSize: '16px',
-        color: 'regular',
+        color: 'primary',
         fontWeight: 600,
         mr: '10px'
       }
     },
-    headSubProps () {
+    headSubStyle () {
       return {
-        fontSize: '16px',
+        fontSize: '12px',
         color: 'secondary'
       }
     },
-    mainProps () {
+    mainStyle () {
       let _mainP = this.title ? '20px 30px' : '30px'
       return {
         p: _mainP,

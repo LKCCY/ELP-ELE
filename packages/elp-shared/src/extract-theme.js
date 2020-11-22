@@ -1,4 +1,5 @@
 import { background, border, color, borderRadius, flexbox, grid, layout, position, shadow, space, typography, compose } from 'styled-system'
+import { css } from "@emotion/css"
 
 const systemFunc= compose(
   space,
@@ -15,3 +16,7 @@ const systemFunc= compose(
 )
 
 export const composeSystem = (props = {}, theme = {}) => systemFunc({ ...props, theme })
+
+export const createClass = (props = {}, theme = {}) => {
+  return css(composeSystem(props, theme))
+}

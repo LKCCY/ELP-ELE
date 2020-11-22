@@ -1,7 +1,7 @@
 {
   "name": "elp-shared",
   "version": "1.0.2",
-  "main": "./dist/index.umd.js",
+  "main": "./index.js",
   "license": "MIT",
   "scripts": {
     "build": "vue-cli-service build --target lib --name index index.js"
