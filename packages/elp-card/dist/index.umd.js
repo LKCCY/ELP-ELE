@@ -127,14 +127,14 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"df5248bc-vue-loader-template"}!D:/临时用测试/elp-ele/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=template&id=4a27a81e&
+// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"df5248bc-vue-loader-template"}!D:/临时用测试/elp-ele/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=template&id=06cff61c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"elp-card"},[(_vm.title)?_c('header',{staticClass:"elp-card__head"},[_c('div',[_c('el-tooltip',{attrs:{"content":_vm.tooltip}},[(_vm.tooltip)?_c('i',{staticClass:"el-icon-warning"}):_vm._e()]),_c('span',{staticClass:"elp-card__head__title"},[_vm._v(_vm._s(_vm.title))]),_c('span',{staticClass:"elp-card__head__sub"},[_vm._v(_vm._s(_vm.subTitle))])],1),_c('div',[_vm._t("operate")],2)]):_vm._e(),_c('main',{staticClass:"elp-card__main",class:{'elp-card__main--symmetry': !_vm.title}},[_vm._t("default")],2)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/elp-card.vue?vue&type=template&id=4a27a81e&
+// CONCATENATED MODULE: ./src/elp-card.vue?vue&type=template&id=06cff61c&
 
-// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--12-0!D:/临时用测试/elp-ele/node_modules/thread-loader/dist/cjs.js!D:/临时用测试/elp-ele/node_modules/babel-loader/lib!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--12-0!D:/临时用测试/elp-ele/node_modules/thread-loader/dist/cjs.js!D:/临时用测试/elp-ele/node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -160,7 +160,9 @@ var staticRenderFns = []
   props: {
     title: String,
     subTitle: String,
-    tooltip: String
+    tooltip: {
+      type: String
+    }
   }
 });
 // CONCATENATED MODULE: ./src/elp-card.vue?vue&type=script&lang=js&
@@ -289,7 +291,7 @@ var component = normalizeComponent(
 
 
 elp_card.install = function (Vue) {
-  Vue.component(Alert.name, elp_card);
+  Vue.component(elp_card.name, elp_card);
 };
 
 /* harmony default export */ var index = (elp_card);
