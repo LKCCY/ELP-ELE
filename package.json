@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "lerna run --scope elp-* build",
+    "clean": "lerna clean",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

@@ -1,6 +1,6 @@
 {
-  "name": "elp-dongdong",
-  "version": "1.0.2",
+  "name": "elp-shared",
+  "version": "1.0.1",
   "main": "./dist/index.umd.js",
   "license": "MIT",
   "scripts": {
@@ -8,13 +8,10 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.8",
-    "@vue/cli-service": "^4.5.8",
-    "vue-template-compiler": "^2.6.12"
+    "@vue/cli-service": "^4.5.8"
   },
   "dependencies": {
-    "elp-shared": "^1.0.1"
-  },
-  "peerDependencies": {
-    "vue": "^2.6.12"
+    "@emotion/css": "^11.0.0",
+    "styled-system": "^5.1.5"
   }
 }
