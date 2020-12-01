@@ -4,6 +4,7 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
+    "cssplugin/*",
     "packages/*"
   ],
   "scripts": {

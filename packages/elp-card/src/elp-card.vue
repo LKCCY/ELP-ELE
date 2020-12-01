@@ -70,3 +70,9 @@ export default {
   },
 }
 </script>
+
+<style lang="less">
+  body {
+    color: @primary;
+  }
+</style>
