@@ -1,4 +1,6 @@
 const path = require('path')
+const resolvePath = (relativePath) => path.resolve(__dirname, relativePath)
+const lessVars = require(resolvePath('../../theme/index'))
 
 module.exports = {
   title: 'Element Ui Pro',
@@ -29,5 +31,16 @@ module.exports = {
         }
       ]
     }
+  },
+  chainWebpack:  (config, isServer) => {
+    config.module
+      .rule('myRules')
+      .test(/\.less$/)
+      .use('lessloader')
+      .loader('less-loader')
+      .tap(options => {
+        let _options = options || {}
+        return { ..._options, globalVars: lessVars }
+      })
   }
 }

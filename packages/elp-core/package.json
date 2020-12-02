@@ -1,0 +1,13 @@
+{
+  "name": "elp-core",
+  "version": "1.0.3",
+  "main": "./dist/index.umd.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name index index.js"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.8",
+    "@vue/cli-service": "^4.5.8"
+  }
+}
