@@ -1,11 +1,11 @@
 {
   "name": "elp-card",
   "version": "1.0.4",
-  "main": "./dist/index.umd.js",
-  "license": "MIT",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name index index.js"
+    "build": "vue-cli-service build --target lib --name index index.js",
+    "lint": "vue-cli-service lint"
   },
+  "main": "./dist/index.umd.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.8",
     "@vue/cli-service": "^4.5.8",
