@@ -1,0 +1,9 @@
+{
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    {
+      "pattern": "./packages/*/",
+      "changeProcessCWD": true
+    }
+  ]
+}
