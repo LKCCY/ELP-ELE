@@ -10,14 +10,17 @@
     "build": "lerna run --scope elp-* build",
     "clean": "lerna clean",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "test": "vue-cli-service test:unit"
   },
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.22.1",
-    "vuepress": "^1.7.1",
+    "@vue/cli-plugin-babel": "^4.5.8",
     "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-plugin-unit-jest": "^4.5.9",
+    "@vue/cli-service": "^4.5.8",
     "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^1.1.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-html": "^6.1.0",
@@ -26,11 +29,12 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "lerna": "^3.22.1",
     "less": "^3.12.2",
     "less-loader": "5.0.0",
-    "@vue/cli-plugin-babel": "^4.5.8",
-    "@vue/cli-service": "^4.5.8",
-    "vue-template-compiler": "^2.6.12"
+    "vue-jest": "^3.0.7",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.7.1"
   },
   "dependencies": {
     "async-validator": "1.11.5",

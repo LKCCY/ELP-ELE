@@ -1,5 +1,5 @@
 const commonConfig = require('../../vue.common')
 
-module.exports =  {
+module.exports = {
   ...commonConfig
 }
