@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card.vue elp-card快照 1`] = `
+<div
+  class="elp-card"
+>
+  <!---->
+   
+  <main
+    class="elp-card__main elp-card__main--symmetry"
+  />
+</div>
+`;

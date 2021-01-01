@@ -1,0 +1,16 @@
+const base = require('../../jest.config.base.js')
+const pack = require('./package')
+const packageName = pack.name
+
+module.exports = {
+  ...base,
+  roots: [
+    `<rootDir>/packages/${packageName}`
+  ],
+  projects: [
+    '<rootDir>/packages/*/jest.config.js'
+  ],
+  rootDir: '../..',
+  moduleDirectories: ['../../node_modules', 'node_modules'],
+  testRegex: `(packages/${packageName}/.*/__tests__/.*|\\.(test|spec))\\.js?$`
+}

@@ -2,7 +2,8 @@
   "name": "elp-card",
   "version": "1.0.4",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name index index.js"
+    "build": "vue-cli-service build --target lib --name index index.js",
+    "test": "jest"
   },
   "main": "./dist/index.umd.js",
   "devDependencies": {
