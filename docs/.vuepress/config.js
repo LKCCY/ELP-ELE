@@ -18,6 +18,12 @@ module.exports = {
           children: ['']
         },
         {
+          title: '数据输入',
+          children: [
+            'data-entry/elp-tag-select'
+          ]
+        },
+        {
           title: '数据展示',
           children: [
             'data-display/elp-dongdong'
@@ -42,5 +48,8 @@ module.exports = {
         let _options = options || {}
         return { ..._options, globalVars: lessVars }
       })
-  }
+  },
+  plugins: [
+    ['vuepress-plugin-typescript']
+  ]
 }

@@ -10,10 +10,12 @@ import './components/index.js'
 import ElpCard from '../../packages/elp-card/index'
 import ElpDongdong from '../../packages/elp-dongdong/index.js'
 import ElpCore from '../../packages/elp-core/index'
+import ElpTagSelect from '../../packages/elp-tag-select/index'
 
 export default ({ Vue }) => {
   Vue.use(ElementUI)
   Vue.use(ElpCard)
   Vue.use(ElpDongdong)
+  Vue.use(ElpTagSelect)
   Vue.use(ElpCore, {})
 }

@@ -18,15 +18,19 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+
+import { defineComponent } from 'vue-demi'
+
+export default defineComponent({
   name: 'elp-card',
   props: {
     title: String,
     subTitle: String,
     tooltip: String
   }
-}
+})
+
 </script>
 
 <style lang="less">
