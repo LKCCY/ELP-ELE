@@ -1,15 +1,16 @@
 import { createWrapper, shallowMount, Wrapper } from '@vue/test-utils'
 import './install-element-ui.js'
 import ElpTagSelect from '../src/elp-tag-select.vue'
+import Vue from 'vue'
 
-function getWrapper (propsData: any) : Wrapper<ElpTagSelect> {
+function getWrapper (propsData: any) : Wrapper<Vue> {
   const wrapper = shallowMount(ElpTagSelect, { propsData })
   return wrapper
 }
 
 describe('ElpTagSelect.vue', () => {
   describe('基本功能测试', () => {
-    let wrapper : Wrapper<ElpTagSelect>
+    let wrapper : Wrapper<Vue>
     const tags = [
       { label: 'label-1', value: 'val-1' },
       { label: 'label-2', value: 'val-2' }

@@ -2106,40 +2106,16 @@ var index_esm_version = external_commonjs_vue_commonjs2_vue_root_Vue_default.a.v
 
 
 
-// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=script&lang=ts&
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--12-0!D:/临时用测试/elp-ele/node_modules/thread-loader/dist/cjs.js!D:/临时用测试/elp-ele/node_modules/ts-loader??ref--12-2!D:/临时用测试/elp-ele/node_modules/cache-loader/dist/cjs.js??ref--0-0!D:/临时用测试/elp-ele/node_modules/vue-loader/lib??vue-loader-options!./src/elp-card.vue?vue&type=script&lang=ts&
 
 /* harmony default export */ var elp_cardvue_type_script_lang_ts_ = (defineComponent({
-  name: 'elp-card',
-  props: {
-    title: String,
-    subTitle: String,
-    tooltip: String
-  }
+    name: 'elp-card',
+    props: {
+        title: String,
+        subTitle: String,
+        tooltip: String
+    }
 }));
-
 
 // CONCATENATED MODULE: ./src/elp-card.vue?vue&type=script&lang=ts&
  /* harmony default export */ var src_elp_cardvue_type_script_lang_ts_ = (elp_cardvue_type_script_lang_ts_); 
@@ -2270,11 +2246,11 @@ var component = normalizeComponent(
 // CONCATENATED MODULE: ./index.js
 
 
-elp_card.install = function (Vue) {
+function index_install (Vue, opts = {}) {
   Vue.component(elp_card.name, elp_card)
 }
 
-/* harmony default export */ var index = (elp_card);
+/* harmony default export */ var index = (index_install);
 
 // CONCATENATED MODULE: D:/临时用测试/elp-ele/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 

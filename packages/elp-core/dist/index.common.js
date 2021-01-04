@@ -171,8 +171,7 @@ const combineVars = options => {
 
 function install(Vue, opts = {}) {
   const theme = opts.theme;
-
-  const _vars = combineVars(theme);
+  combineVars(theme);
 }
 
 /* harmony default export */ var index = (install);
