@@ -1,6 +1,7 @@
 const base = require('../../jest.config.base.js')
 const pack = require('./package')
 const packageName = pack.name
+console.log('packageName: ', packageName)
 
 module.exports = {
   ...base,

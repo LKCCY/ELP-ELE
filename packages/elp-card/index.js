@@ -1,7 +1,7 @@
 import ElpCard from './src/elp-card.vue'
 
-ElpCard.install = function (Vue) {
+function install (Vue, opts = {}) {
   Vue.component(ElpCard.name, ElpCard)
 }
 
-export default ElpCard
+export default install

@@ -1,9 +1,9 @@
 {
   "extends": "../../tsconfig.json",
-  "files": [],
   "include": [
     "src/*.tsx",
     "src/*.vue",
-    "src/*.ts"
+    "src/*.ts",
+    "__tests__/*.ts"
   ]
 }

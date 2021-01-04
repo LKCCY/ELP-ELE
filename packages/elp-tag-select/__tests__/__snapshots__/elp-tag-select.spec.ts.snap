@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ElpTagSelect.vue 基本功能测试 快照测试 1`] = `
+<section
+  class="elp-tag-select"
+>
+  <label
+    class="elp-tag-select__title"
+    style="width: 100px;"
+  >
+    
+      label-name
+    
+  </label>
+   
+  <section
+    class="elp-tag-select__list"
+  >
+    <div
+      class="list-items hidden-more"
+    >
+      <span
+        class="ep-tag"
+      >
+        
+        label-1
+      
+      </span>
+      <span
+        class="ep-tag"
+      >
+        
+        label-2
+      
+      </span>
+    </div>
+     
+    <div
+      class="list-more"
+    >
+      <el-button-stub
+        class="btn-more"
+        icon=""
+        nativetype="button"
+        type="text"
+      >
+        
+        更多 
+        <i
+          class="el-icon-arrow-down"
+        />
+      </el-button-stub>
+    </div>
+  </section>
+</section>
+`;

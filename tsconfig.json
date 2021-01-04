@@ -12,7 +12,8 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "jest"
     ],
     "lib": [
       "esnext",
@@ -21,7 +22,7 @@
       "scripthost"
     ]
   },
-  "files": [],
+  "files": ["./shim-vue.d.ts"],
   "include": [
     "packages/*/src"
   ],

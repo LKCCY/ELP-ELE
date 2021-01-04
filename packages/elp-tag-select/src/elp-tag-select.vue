@@ -46,12 +46,7 @@ import { ref, defineComponent, computed, watch, PropType } from 'vue-demi'
 
 import cloneDeep from 'lodash.clonedeep'
 import omit from 'lodash.omit'
-
-interface ITag {
-  label: string,
-  value: any,
-  checked: boolean,
-}
+import { ITag } from '../index'
 
 export default defineComponent({
   name: 'elp-tag-select',
